@@ -1,0 +1,135 @@
+/* Partners Section */
+.partners-section {
+  width: 100%;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  letter-spacing: -0.05em;
+}
+
+.title-highlight {
+  color: #4c40cf;
+}
+
+.partners-subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 3rem;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.partner-logo {
+  width: 100%;
+  max-width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .partners-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .partners-title {
+    font-size: 2rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+  }
+
+  .partner-logo {
+    max-width: 150px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .partners-title {
+    font-size: 1.8rem;
+  }
+
+  .partners-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .partners-title {
+    font-size: 1.5rem;
+  }
+
+  .partners-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .partners-grid {
+    gap: 1rem;
+  }
+
+  .partner-logo {
+    height: 80px;
+    padding: 1rem;
+  }
+}

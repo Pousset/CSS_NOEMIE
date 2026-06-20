@@ -1,0 +1,23 @@
+/* App principal */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  /* Active le scroll-snap vertical section par section */
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+main.scroll-locked {
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+}

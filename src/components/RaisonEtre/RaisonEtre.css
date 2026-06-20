@@ -1,0 +1,205 @@
+/* Raison d'être Section */
+.raison-section {
+  width: 100%;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.raison-section::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.06) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.raison-section::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(249, 195, 57, 0.06) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.raison-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.raison-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.raison-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.raison-highlight {
+  background: linear-gradient(135deg, #2563eb 0%, #f9c339 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Content Layout */
+.raison-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Cards */
+.raison-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.raison-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.12);
+}
+
+.raison-icon {
+  width: 100%;
+  height: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.raison-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.raison-card:hover .raison-icon img {
+  transform: scale(1.05);
+}
+
+.raison-card p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #475569;
+  margin: 0;
+  text-align: center;
+}
+
+.raison-card strong {
+  color: #1e293b;
+}
+
+/* Main Card */
+.raison-card-main {
+  border-left: 4px solid #2563eb;
+}
+
+/* Secondary Card */
+.raison-card-secondary {
+  border-left: 4px solid #f59e0b;
+}
+
+/* Highlight Card */
+.raison-card-highlight {
+  background: linear-gradient(135deg, #1e2858 0%, #2d3561 100%);
+  border-left: 4px solid #f9c339;
+  padding: 3rem;
+}
+
+.raison-card-highlight:hover {
+  box-shadow: 0 12px 40px rgba(30, 40, 88, 0.3);
+}
+
+.raison-creation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.raison-year {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #f9c339;
+  flex-shrink: 0;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.raison-card-highlight p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.raison-card-highlight strong {
+  color: #f9c339;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .raison-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .raison-title {
+    font-size: 2.2rem;
+  }
+
+  .raison-card {
+    padding: 1.75rem;
+  }
+
+  .raison-card p {
+    font-size: 1.05rem;
+  }
+
+  .raison-card-highlight {
+    padding: 2rem;
+  }
+
+  .raison-creation {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .raison-year {
+    font-size: 3rem;
+  }
+
+  .raison-card-highlight p {
+    font-size: 1.05rem;
+  }
+}

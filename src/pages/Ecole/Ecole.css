@@ -1,0 +1,368 @@
+/* Ecole Page Styles */
+
+.ecole-page {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* Hero Section */
+.ecole-hero {
+  background: linear-gradient(135deg, #1e2858 0%, #2d3561 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.ecole-hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.ecole-hero-content .tagline {
+  font-size: 1.3rem;
+  color: #f9c339;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ecole-hero-content .subtitle {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+/* Main Container */
+.ecole-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Introduction Section */
+.ecole-intro {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #f9c339;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.intro-text p {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.intro-highlight {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e2858;
+}
+
+.intro-secondary {
+  font-size: 1.1rem;
+  color: #2d3561;
+  font-weight: 600;
+}
+
+.intro-mission {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Sections */
+.ecole-section {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ecole-section h2 {
+  font-size: 1.8rem;
+  color: #1e2858;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f9c339;
+}
+
+.section-content {
+  line-height: 1.8;
+  color: #555;
+}
+
+.section-content p {
+  margin-bottom: 1rem;
+}
+
+.section-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Missions List */
+.missions-list li {
+  padding-left: 2rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.missions-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #f9c339;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Facilities List */
+.facilities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.facilities-list li {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 3px solid #f9c339;
+  text-align: center;
+  font-weight: 500;
+  color: #1e2858;
+}
+
+/* Highlight Boxes */
+.highlight-box {
+  background: #fff8e1;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid #f9c339;
+  font-weight: 600;
+  color: #1e2858;
+  margin: 1rem 0;
+}
+
+/* Excellence Box */
+.excellence-box {
+  background: linear-gradient(135deg, #f9c339 0%, #fbbf24 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  color: #1e2858;
+  margin-bottom: 1.5rem;
+}
+
+.excellence-box p {
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+/* Stats Box */
+.stats-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #e0e0e0;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f9c339;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.95rem;
+  color: #1e2858;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* Partners Grid */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.partner-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #f9c339;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.partner-card h3 {
+  color: #1e2858;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.partner-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* Engagement Section */
+.engagement-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.engagement-section h3 {
+  color: #1e2858;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.engagement-list {
+  list-style: none;
+  padding: 0;
+}
+
+.engagement-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.engagement-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #f9c339;
+  font-weight: bold;
+}
+
+.engagement-list a {
+  color: #1e2858;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.engagement-list a:hover {
+  color: #f9c339;
+}
+
+/* CTA Section */
+.ecole-cta {
+  background: linear-gradient(135deg, #1e2858 0%, #2d3561 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.ecole-cta h2 {
+  color: white;
+  border-bottom-color: #f9c339;
+  margin-bottom: 1rem;
+}
+
+.ecole-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #f9c339;
+  color: #1e2858;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #fbbf24;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(249, 195, 57, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ecole-hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .ecole-hero-content .tagline {
+    font-size: 1.1rem;
+  }
+
+  .ecole-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-highlight {
+    font-size: 1.1rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .facilities-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .ecole-hero {
+    padding: 2rem 1rem;
+  }
+
+  .ecole-hero-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .ecole-container {
+    padding: 1rem;
+  }
+
+  .ecole-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-content p {
+    font-size: 0.95rem;
+  }
+
+  .facilities-list {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}

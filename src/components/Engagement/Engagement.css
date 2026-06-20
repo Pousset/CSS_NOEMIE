@@ -1,0 +1,287 @@
+/* Engagement Section */
+.engagement-section {
+  width: 100%;
+  padding: 6rem 2rem;
+  background-color: #f9fafb;
+}
+
+.engagement-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Title */
+.engagement-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 4rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+
+.engagement-title .highlight {
+  color: #2563eb;
+}
+
+/* Engagement Items Grid */
+.engagement-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.engagement-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Engagement Item */
+.engagement-item {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.engagement-item.with-image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+}
+
+.engagement-item.with-image:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.engagement-item.with-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.engagement-item.with-image:hover img {
+  transform: scale(1.05);
+}
+
+.engagement-item.with-image p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.5) 70%,
+    transparent 100%
+  );
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+}
+
+.stat-number {
+  color: #f9c339;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+/* Description Item */
+.engagement-item.description {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.engagement-item.description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.95;
+  letter-spacing: -0.02em;
+}
+
+/* Mission Link */
+.mission-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.mission-link:hover {
+  gap: 1rem;
+  opacity: 0.9;
+}
+
+.mission-link svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.mission-link:hover svg {
+  transform: translateX(4px);
+}
+
+.mission-link svg path {
+  fill: #f9c339 !important;
+}
+
+/* Mobile/Desktop Toggle */
+.engagement-item.description.mobile {
+  display: none;
+}
+
+.engagement-item.description.desktop {
+  display: flex;
+}
+
+/* Animation variants */
+.engagement-item.translate1 {
+  animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+.engagement-item.translate2 {
+  animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .engagement-title {
+    font-size: 2.5rem;
+  }
+
+  .engagement-item.with-image p {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+  }
+
+  .engagement-item.description {
+    padding: 2.5rem;
+  }
+
+  .engagement-item.description p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .engagement-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .engagement-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .engagement-items {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .engagement-column {
+    gap: 1.5rem;
+  }
+
+  /* Show mobile description, hide desktop */
+  .engagement-item.description.mobile {
+    display: flex;
+    order: -1;
+    margin-bottom: 1rem;
+  }
+
+  .engagement-item.description.desktop {
+    display: none;
+  }
+
+  .engagement-item.description {
+    padding: 2rem;
+  }
+
+  .engagement-item.description p {
+    font-size: 0.95rem;
+  }
+
+  .mission-link {
+    font-size: 0.95rem;
+  }
+
+  .mission-link svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .engagement-item.with-image p {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+
+  .stat-number {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .engagement-section {
+    padding: 3rem 1rem;
+  }
+
+  .engagement-title {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .engagement-item.description {
+    padding: 1.5rem;
+  }
+
+  .engagement-item.description p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .mission-link {
+    font-size: 0.9rem;
+  }
+
+  .engagement-item.with-image p {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.2rem;
+  }
+}
